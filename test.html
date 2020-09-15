@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #main{
+           /* background-color: skyblue;  */
+            
+           
+            
+        }
+        </style>
+
+        <div id="main" >
+            
+            <div id="bird">
+                <img src="200w.webp" alt="" style="margin-right: 500px;"/>
+                <img src="200w.webp" alt="" />
+            </div>
+            
+            <div id="men-bird" style="height: 250px;text-align: right;margin-top: 25px;">
+                <img src="200.webp" style="margin-top: 20px;"/>
+                
+                
+            </div>
+        </div>
+            <div id="as" style="height: 200px;">
+                
+                
+            </div>
+            <div id="men">
+                <img src="giphy.gif" />
+                <hr />
+            </div>
+
+        
+</head>
+
+<body>
+    
+    <script>
+
+    var element = document.querySelector('#bird')
+    
+    element.animate(
+        [
+            {transform:'translate(0,0)'},
+            {transform:'translate(800px,0)'},
+            {transform:'translate(1000px,15px)'},
+            // {transform:'translate(0,0)'},
+            // {transform:'translate(0,0)'},
+            
+        
+
+        ],
+        {
+            duration:5000,
+            iterations:Infinity
+        }
+    )
+
+    var elem1 = document.querySelector('#men-bird')
+    elem1.animate([
+        {transform: 'translate(0,0)'},
+        {transform: 'translate(-2000px,200px)'},
+    ],{
+
+        duration:5000,
+        iterations:Infinity
+    })
+    var elem2 = document.querySelector('#men')
+    elem2.animate([
+        {transform: 'translate(0,0)'},
+        {transform: 'translate(2000px,60px)'},
+    ],{
+
+        duration:3000,
+        iterations:Infinity
+    })
+    </script>
+    
+</body>
+</html>
